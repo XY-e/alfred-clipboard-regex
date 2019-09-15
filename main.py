@@ -39,6 +39,10 @@ def get_clip_hist():
 
 def get_clipboard_fn():
     base_dn = os.path.dirname(os.path.dirname(wf.datadir))
+    env = wf.alfred_env
+    if env.get('version', '').startswith('4.'):
+        base_dn = base_dn.replace('Alfred 3', 'Alfred')
+    
     return os.path.join(base_dn, 'Databases', 'clipboard.alfdb')
 
 

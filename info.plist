@@ -58,7 +58,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>/usr/local/bin/python2 main.py "{query}"</string>
+				<string>/usr/bin/python main.py "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
